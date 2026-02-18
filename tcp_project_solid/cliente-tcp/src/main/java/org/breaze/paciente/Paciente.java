@@ -1,12 +1,5 @@
-package org.breaze.dto;
 
-/**
- * @version 1.0
- * @author sebastian villaneda gutierrez - Juan pablo orozco
- *
- *
- *
- * */
+
 public class Paciente {
 
 
@@ -92,5 +85,10 @@ public class Paciente {
 
     public String getGenero() {
         return genero;
+    }
+
+    public String toCSV() {
+        return documentoId + "," + nombre + "," + apellido + "," + edad + "," +
+                correo + "," + genero + "," + ciudad + "," + pais;
     }
 }
